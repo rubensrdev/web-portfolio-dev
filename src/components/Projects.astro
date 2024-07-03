@@ -1,31 +1,31 @@
 ---
 import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
+import Swift from "./icons/Swift.astro"
+import Firebase from "./icons/Firebase.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "Swift",
-    class: "bg-black text-white",
-    icon: NextJS,
-  },
-  TAILWIND: {
-    name: "Tailwind CSS",
+  SWIFT: {
+    name: "Swift + Swift UI",
     class: "bg-[#003159] text-white",
-    icon: Tailwind,
+    icon: Swift,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#003159] text-white",
+    icon: Firebase,
   }
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "Chef Recipes 👨🏻‍🍳",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
+      "Aplicación sobre recetas de cocina. Podemos crear un perfil de usuario y encontrar recetas de otros usuarios, crear las nuestras, ver rankings de recetas más guardadas, buscar por título, categoría, etc. Desarrollada con Swift, Swift UI y Firebase como backend.",
     link: "https://svgl.vercel.app/",
     github: "https://github.com/pheralb/svgl",
     image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.SWIFT, TAGS.FIREBASE],
   },
   {
     title: "AdventJS - Retos de programación con JavaScript y TypeScript",
@@ -33,7 +33,7 @@ const PROJECTS = [
       "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
     link: "https://adventjs.dev",
     image: "/projects/adventjs.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [ TAGS.SWIFT],
   },
 ]
 ---
