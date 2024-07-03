@@ -9,7 +9,7 @@ Inspirada en el proyecto original de <a href="https://github.com/midudev/porfoli
 
 <img
       class="rounded-full shadow-lg size-16"
-      src="/presentation.webp"
+      src="./public/presentation.webp"
       alt="presentation image"
     />
 </div>
