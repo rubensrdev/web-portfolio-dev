@@ -2,12 +2,17 @@
 import GitHub from "./icons/GitHub.astro"
 import Swift from "./icons/Swift.astro"
 import Firebase from "./icons/Firebase.astro"
-import Link from "./icons/Link.astro"
+import YouTube from "./icons/YouTube.astro"
 import LinkButton from "./LinkButton.astro"
 
 const TAGS = {
-  SWIFT: {
+  SWIFTUI: {
     name: "Swift + Swift UI",
+    class: "bg-[#003159] text-white",
+    icon: Swift,
+  },
+  SWIFTUIDATA: {
+    name: "Swift + Swift UI+ Swift Data",
     class: "bg-[#003159] text-white",
     icon: Swift,
   },
@@ -21,19 +26,83 @@ const PROJECTS = [
   {
     title: "Chef Recipes 👨🏻‍🍳",
     description:
-      "Aplicación sobre recetas de cocina. Podemos crear un perfil de usuario y encontrar recetas de otros usuarios, crear las nuestras, ver rankings de recetas más guardadas, buscar por título, categoría, etc. Desarrollada con Swift, Swift UI y Firebase como backend.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.SWIFT, TAGS.FIREBASE],
+      "Chef Recipes es una aplicación iOS diseñada para los entusiastas de la cocina. Con Chef Recipes, puedes crear tu perfil de usuario y descubrir recetas compartidas por otros usuarios. También puedes crear y guardar tus propias recetas, y explorar los rankings de las recetas más populares. La aplicación permite búsquedas fáciles y versátiles por título, categoría, y más. Desarrollada con Swift, SwiftUI y Firebase como backend, Chef Recipes ofrece una experiencia fluida y enriquecedora para tu aventura culinaria.",
+    link: "https://github.com/isthebetadev/ChefRecipes-Firebase-SwiftUI",
+    github: "https://github.com/isthebetadev/ChefRecipes-Firebase-SwiftUI",
+    image: "/projects/appLogos/chefRecipes.webp",
+    tags: [TAGS.SWIFTUI, TAGS.FIREBASE],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "My Expenses 💸",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
-    image: "/projects/adventjs.webp",
-    tags: [ TAGS.SWIFT],
+      "My Expenses es una aplicación iOS diseñada para ayudarte a gestionar tus gastos e ingresos de manera eficiente. Con My Expenses, puedes crear y organizar hojas de gastos e ingresos, asignando categorías personalizadas que también puedes crear y eliminar según tus necesidades. Desarrollada con Swift, SwiftUI y Swift Data, My Expenses ofrece una interfaz intuitiva y moderna que facilita el seguimiento de tus finanzas personales.",
+    link: "https://github.com/isthebetadev/my-expenses",
+    github: "https://github.com/isthebetadev/my-expenses",
+    image: "/projects/appLogos/myExpenses.webp",
+    tags: [ TAGS.SWIFTUIDATA],
+  },
+  {
+    title: "Books Diary 📖",
+    description:
+      "Books Diary es una aplicación iOS que te permite gestionar tu propia biblioteca personal. Con Books Diary, puedes añadir libros, marcarlos como leídos, pendientes o favoritos, actualizar su información y eliminarlos según tus necesidades. Al marcar un libro como leído, puedes dejar una opinión o reseña para recordar tu experiencia de lectura. Desarrollada con Swift, SwiftUI y Swift Data, Books Diary ofrece una interfaz intuitiva y moderna para ayudarte a mantener organizada tu colección de libros.",
+    link: "https://github.com/isthebetadev/booksdiary",
+    github: "https://github.com/isthebetadev/booksdiary",
+    image: "/projects/appLogos/booksDiary.webp",
+    tags: [ TAGS.SWIFTUIDATA],
+  },
+  {
+    title: "Do I Have Time? ⌚️",
+    description:
+      "Do I Have Time? es una aplicación iOS diseñada para ayudarte a gestionar tu tiempo de entretenimiento. Introduce la duración en minutos de una película o episodio de una serie, y la aplicación te dirá a qué hora terminarás de verlo. Desarrollada con Swift y SwiftUI, Do I Have Time? ofrece una solución sencilla y rápida para planificar tu tiempo de visualización de manera eficiente.",
+    link: "https://github.com/isthebetadev/do-I-have-time",
+    github: "https://github.com/isthebetadev/do-I-have-time",
+    image: "/projects/appLogos/doIHaveTime.webp",
+    tags: [ TAGS.SWIFTUI],
+  },
+  {
+    title: "Game Stream 🎮",
+    description:
+      "Game Stream es una aplicación iOS diseñada para los entusiastas de los videojuegos. Permite registrarse e iniciar sesión localmente, brindando una experiencia personalizada. La pantalla principal muestra los videojuegos más populares, categorías sugeridas, juegos recomendados y trailers. Además, cuenta con una pestaña dedicada al listado de juegos, donde puedes buscar y visualizar la ficha de cada uno. Otra sección te permite gestionar tus videojuegos favoritos. Por último, la sección de perfil te permite actualizar tus datos personales, como la imagen, el usuario y la contraseña. Desarrollada con Swift y SwiftUI, Game Stream ofrece una interfaz moderna y fluida para los amantes de los videojuegos.",
+    link: "https://github.com/isthebetadev/GameStream",
+    github: "https://github.com/isthebetadev/GameStream",
+    image: "/projects/appLogos/gameStream.webp",
+    tags: [ TAGS.SWIFTUI],
+  },
+  {
+    title: "Pokedex 🐛",
+    description:
+      "Pokedex es una aplicación iOS que te proporciona acceso completo a la Pokedex de Pokémon. Utiliza peticiones a una API externa (PokeAPI) para obtener información detallada de cada Pokémon, mostrando su nombre e imagen de manera intuitiva. Al pulsar sobre un Pokémon, puedes acceder a información más detallada sobre sus características y habilidades. Desarrollada con Swift, SwiftUI y peticiones API, Pokedex ofrece una experiencia interactiva y educativa para los aficionados de Pokémon.",
+    link: "https://github.com/isthebetadev/pokedex-swiftui",
+    github: "https://github.com/isthebetadev/pokedex-swiftui",
+    image: "/projects/appLogos/pokedex.webp",
+    tags: [ TAGS.SWIFTUI],
+  },
+  {
+    title: "Tiempo ⛅️",
+    description:
+      "WeatherNow es una aplicación iOS que te proporciona información actualizada del tiempo en tu ubicación actual o en cualquier otra ubicación que busques. Utiliza peticiones a una API externa (openweathermap) para obtener datos precisos como la temperatura actual, condiciones climáticas, velocidad del viento, humedad y más. Desarrollada con Swift, SwiftUI y peticiones API, WeatherNow ofrece una interfaz intuitiva y fácil de usar para mantenerte informado sobre el clima en tiempo real.",
+    link: "https://github.com/isthebetadev/tiempo-swiftui",
+    github: "https://github.com/isthebetadev/tiempo-swiftui",
+    image: "/projects/appLogos/tiempo.webp",
+    tags: [ TAGS.SWIFTUI],
+  },
+  {
+    title: "TODO ✅",
+    description:
+      "TODO es una aplicación iOS diseñada para ayudarte a organizar tus tareas diarias de manera efectiva. Puedes crear nuevos elementos de TODO, visualizar tu lista de tareas pendientes, actualizar su estado o marcarlos como completados según avances en tus actividades. La información se guarda en memoria para facilitar un acceso rápido y eficiente. Desarrollada completamente con Swift y SwiftUI, TODO ofrece una experiencia simple y funcional para gestionar tus tareas diarias directamente desde tu dispositivo iOS.",
+    link: "https://github.com/isthebetadev/to-do-swiftui",
+    github: "https://github.com/isthebetadev/to-do-swiftui",
+    image: "/projects/appLogos/todo.webp",
+    tags: [ TAGS.SWIFTUI],
+  },
+  {
+    title: "Calculator 🤔",
+    description:
+      "Calculator es una aplicación iOS que ofrece funciones básicas de cálculo, con un diseño similar al de la calculadora nativa de iOS. Puedes realizar operaciones matemáticas simples como suma, resta, multiplicación y división de manera intuitiva y rápida. Desarrollada con Swift y SwiftUI, Calculator proporciona una interfaz familiar y fácil de usar para realizar cálculos en tu dispositivo iOS.",
+    link: "https://github.com/isthebetadev/calculadora-swiftui",
+    github: "https://github.com/isthebetadev/calculadora-swiftui",
+    image: "/projects/appLogos/calculator.webp",
+    tags: [ TAGS.SWIFTUI],
   },
 ]
 ---
@@ -42,9 +111,10 @@ const PROJECTS = [
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
+
+<div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="Apps iOS desarrolladas por Rubén Segura" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
@@ -77,7 +147,7 @@ const PROJECTS = [
           )}
           {link && (
             <LinkButton href={link}>
-              <Link class="size-4" />
+              <YouTube class="size-4" />
               Preview
             </LinkButton>
           )}
